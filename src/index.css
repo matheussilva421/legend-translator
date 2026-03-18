@@ -1,13 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "./styles/custom.css";
 
 :root {
   color-scheme: dark;
 }
 
 body {
-  @apply bg-background text-gray-100 min-h-screen;
+  background-color: var(--color-background);
+  color: #e5e7eb;
+  min-height: 100vh;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
