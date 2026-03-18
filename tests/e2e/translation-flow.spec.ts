@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-test('fluxo completo de tradução', async ({ page }) => {
+test('fluxo completo de traducao', async ({ page }) => {
   await page.goto('/')
 
   // Upload de arquivo
