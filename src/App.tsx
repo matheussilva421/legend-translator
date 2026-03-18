@@ -7,10 +7,10 @@ import { BatchControls } from './components/BatchControls'
 import { DownloadButton } from './components/DownloadButton'
 import { useSubtitleStore } from './hooks/useSubtitleStore'
 import { parseSRT } from './core/srtParser'
-import { SubtitleEntry, ApiConfig as ApiConfigType } from './core/types'
+import type { SubtitleEntry, ApiConfig as ApiConfigType } from './core/types'
 
 function App() {
-  const { setSubtitles, setApiConfig, apiConfig } = useSubtitleStore()
+  const { setSubtitles, setApiConfig } = useSubtitleStore()
   const [selectedEntry, setSelectedEntry] = useState<SubtitleEntry | undefined>()
   const [hasFile, setHasFile] = useState(false)
 

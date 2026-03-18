@@ -1,5 +1,5 @@
 import { useSubtitleStore } from '../hooks/useSubtitleStore'
-import { SubtitleEntry } from '../core/types'
+import type { SubtitleEntry } from '../core/types'
 
 interface SubtitleListProps {
   onSelectEntry: (entry: SubtitleEntry) => void

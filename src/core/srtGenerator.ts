@@ -1,4 +1,4 @@
-import { SubtitleEntry } from './types'
+import type { SubtitleEntry } from './types'
 
 export function generateSRT(entries: SubtitleEntry[]): string {
   return entries.map((entry, i) => {

@@ -1,6 +1,6 @@
 import OpenAI from 'openai'
 import { BaseTranslator } from './BaseTranslator'
-import { SubtitleEntry } from '../types'
+import type { SubtitleEntry } from '../types'
 
 export class OpenAITranslator extends BaseTranslator {
   private client: OpenAI

@@ -1,4 +1,4 @@
-import { SubtitleEntry } from './types'
+import type { SubtitleEntry } from './types'
 
 const TIMESTAMP_REGEX = /(\d{2}:\d{2}:\d{2},\d{3})\s*-->\s*(\d{2}:\d{2}:\d{2},\d{3})/
 

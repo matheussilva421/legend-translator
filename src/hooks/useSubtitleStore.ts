@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
-import { SubtitleEntry, ApiConfig as ApiConfigType } from '../core/types'
+import type { SubtitleEntry, ApiConfig as ApiConfigType } from '../core/types'
 
 interface SubtitleStore {
   subtitles: SubtitleEntry[]
@@ -17,7 +17,7 @@ interface SubtitleStore {
 
 export const useSubtitleStore = create<SubtitleStore>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       subtitles: [],
       apiConfig: null,
       selectedIds: new Set(),

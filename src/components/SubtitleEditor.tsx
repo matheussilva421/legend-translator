@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useSubtitleStore } from '../hooks/useSubtitleStore'
-import { SubtitleEntry } from '../core/types'
+import type { SubtitleEntry } from '../core/types'
 
 interface SubtitleEditorProps {
   entry?: SubtitleEntry

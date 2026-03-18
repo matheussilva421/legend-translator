@@ -1,6 +1,7 @@
 import { Anthropic } from '@anthropic-ai/sdk'
+import type { TextBlock } from '@anthropic-ai/sdk/resources/messages.mjs'
 import { BaseTranslator } from './BaseTranslator'
-import { SubtitleEntry } from '../types'
+import type { SubtitleEntry } from '../types'
 
 export class AnthropicTranslator extends BaseTranslator {
   private client: Anthropic
@@ -20,7 +21,7 @@ export class AnthropicTranslator extends BaseTranslator {
       messages: [{ role: 'user', content: prompt }]
     })
 
-    const translations = (response.content[0]?.text || '').split('\n\n---\n\n')
+    const translations = ((response.content[0] as TextBlock)?.text || '').split('\n\n---\n\n')
 
     return entries.map((entry, i) => ({
       ...entry,

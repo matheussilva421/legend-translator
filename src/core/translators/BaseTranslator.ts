@@ -1,4 +1,4 @@
-import { SubtitleEntry } from '../types'
+import type { SubtitleEntry } from '../types'
 
 export abstract class BaseTranslator {
   protected apiKey: string

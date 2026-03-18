@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Settings } from 'lucide-react'
-import { ApiProvider, ApiConfig as ApiConfigType } from '../core/types'
+import type { ApiProvider, ApiConfig as ApiConfigType } from '../core/types'
 
 interface ApiConfigProps {
   onSave: (config: ApiConfigType) => void

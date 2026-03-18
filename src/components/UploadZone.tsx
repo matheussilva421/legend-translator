@@ -30,11 +30,6 @@ export function UploadZone({ onFileSelect }: UploadZoneProps) {
     if (file) handleFile(file)
   }, [handleFile])
 
-  const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]
-    if (file) handleFile(file)
-  }, [handleFile])
-
   return (
     <div
       data-testid="dropzone"

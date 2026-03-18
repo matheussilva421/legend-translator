@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai'
 import { BaseTranslator } from './BaseTranslator'
-import { SubtitleEntry } from '../types'
+import type { SubtitleEntry } from '../types'
 
 export class GeminiTranslator extends BaseTranslator {
   private client: ReturnType<typeof GoogleGenerativeAI.prototype.getGenerativeModel>
