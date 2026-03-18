@@ -26,7 +26,7 @@ This is a test subtitle.`
   await page.click('button:has-text("Salvar")')
 
   // Selecionar legendas
-  await page.click('input[type="checkbox"]').first()
+  await page.locator('input[type="checkbox"]').first().click()
 
   // Baixar arquivo
   const downloadPromise = page.waitForEvent('download')

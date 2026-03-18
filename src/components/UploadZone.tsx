@@ -49,6 +49,10 @@ export function UploadZone({ onFileSelect }: UploadZoneProps) {
         accept=".srt"
         className="hidden"
         id="file-input"
+        onChange={(e) => {
+          const file = e.target.files?.[0]
+          if (file) handleFile(file)
+        }}
       />
       <label
         htmlFor="file-input"
